@@ -6,25 +6,18 @@
     android:layout_height="match_parent"
     >
 
-    <FrameLayout
-        android:id="@+id/frame_login_container"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragDashBoardNavHost"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_dashboard_graph"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:background="@android:color/transparent">
-
-        <fragment
-            android:id="@+id/fragDashBoardNavHost"
-            android:name="androidx.navigation.fragment.NavHostFragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:defaultNavHost="true"
-            app:navGraph="@navigation/nav_dashboard_graph" />
-
-    </FrameLayout>
+        android:background="@android:color/transparent" />
 
     <!--<com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation_view"
