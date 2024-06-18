@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_dashboard_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.navigationlib.sample_nav_crash_move_to_state.dashboard.DashboardFragmentFragment"
+        android:label="DashboardFragment">
+        <action
+            android:id="@+id/actionDashboard_To_SomeDestinationFragment"
+            app:destination="@id/someDestinationFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/someDestinationFragment"
+        android:name="com.navigationlib.sample_nav_crash_move_to_state.somedestination.SomeDestinationFragment"
+        android:label="SomeDestinationFragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/aboutYouFragment"
+        android:name="com.navigationlib.sample_nav_crash_move_to_state.aboutyou.AboutYouFragment"
+        android:label="AboutYouFragment">
+
+    </fragment>
+
+</navigation>

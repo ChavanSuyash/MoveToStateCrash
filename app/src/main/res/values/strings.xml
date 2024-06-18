@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">sample-nav-crash-move-to-state</string>
+    <string name="login_fragment">Login Fragment</string>
+    <string name="dashboard_fragment">Dashboard Fragment</string>
+    <string name="some_destination_fragment">Some Destination Fragment</string>
+    <string name="logout_activity">Logout Activity</string>
+    <string name="login">Login</string>
+    <string name="to_some_destination">To some destination</string>
+    <string name="nav_home">Home</string>
+    <string name="about_you">About You</string>
+    <string name="nav_about_you">About You</string>
 </resources>
