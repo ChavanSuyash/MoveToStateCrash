@@ -40,5 +40,7 @@ data class Temp(
     val name: String = "Tempo",
     val id: String = "Id"
 ): Serializable {
-
+    override fun hashCode(): Int {
+        return ('a'..'z').random().hashCode()
+    }
 }
